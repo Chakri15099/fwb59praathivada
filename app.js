@@ -8,6 +8,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var batsRouter = require('./routes/bats');
 var addmodsRouter = require('./routes/addmods');
+var selectorRouter = require('./routes/selector');
+
+
 
 
 var app = express();
@@ -26,6 +29,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/bats', batsRouter);
 app.use('/addmods', addmodsRouter);
+app.use('/selector', selectorRouter);
+
 
 
 
